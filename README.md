@@ -19,15 +19,20 @@ A simple web application that allows users to log, edit, and view meals for diff
 ---
 ## Usage
 
+### Home Page
+The home page displays a weekly overview of meals logged. Each day shows a summary of meals for that day (breakfast, lunch, dinner, snack). User can navigate through different weeks using the "Previous Week" and "Next Week" buttons.
+
 ### Adding a New Meal for current date
 1. Navigate to the "Meal Log" page.
 2. Select a meal type.
 3. Enter a short description, optional long description, and upload a photo if desired.
 4. Save the meal.
 
+### Replacing a Meal 
+- If user will try to log a meal for the current day and meal type that already exists, the user will be prompted with a warning to replace the existing meal or cancel the action.
+
 ### Viewing or Editing Existing Meals
-- View logged meals on the home page.
-- Click on a meal to edit, update, or delete it.
+- If a meal has already been logged for the day, you can click on it to edit the existing meal, including the short description, long description, and photo.
 
 ### Logging Meals for Previous Dates
 1. Click the "Add Meal" option on the home page for the corresponding date and meal type.
@@ -119,5 +124,15 @@ CREATE TABLE diary (
 ```bash
 .exit
 ```
+## Running the Application
+Once the dependencies and set up the database are installed, you can run the application using:
+
+```bash
+flask run
+```
+
+>Acknowledgments
+Inspired by various meal tracking applications.
+Thanks to Flask and Bootstrap for making it easy to build a web app.
 
 
