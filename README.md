@@ -1,5 +1,5 @@
->This is my final project for CS50 Introduction to Computer Sciense course.
 # CS50x-Final-Project
+>This is my final project for CS50 Introduction to Computer Sciense course.
 # Meal Tracker
 #### Video Demo:  <URL HERE>
 #### Description:
@@ -49,18 +49,20 @@ A simple web application that allows users to log, edit, and view meals for diff
 ## Project Structure
 
 CS50x-Final-Project/
-├── static/             # CSS, JavaScript, uploads
-├── templates/          # HTML templates
-├── app.py              # Main application logic
-├── helpers.py          # Other application logic
-├── requirements.txt    # Python dependencies
-├── README.md           # Project documentation
-└── tracker.db          # SQLite database 
+├── # static/             # CSS, JavaScript, uploads
+├── # templates/          # HTML templates
+├── # app.py              # Main application logic
+├── # helpers.py          # Other application logic
+├── # requirements.txt    # Python dependencies
+├── # README.md           # Project documentation
+└── # tracker.db          # SQLite database 
 
 ## Installation
 
 ### Prerequisites
+Install SQLite (if not already installed)
 
+## Setting Up the Database
 1. Clone the repository:
     ```bash
     git clone https://github.com/jmikusova/CS50x-Final-Project.git
