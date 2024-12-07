@@ -124,15 +124,15 @@ CREATE TABLE diary (
 ```bash
 .exit
 ```
-## Running the Application
+### Running the Application
 Once the dependencies and set up the database are installed, you can run the application using:
 
 ```bash
 flask run
 ```
 
->Acknowledgments
-Inspired by various meal tracking applications.
-Thanks to Flask and Bootstrap for making it easy to build a web app.
+## Acknowledgments
+>Inspired by various meal tracking applications.
+>Thanks to Flask and Bootstrap for making it easy to build a web app.
 
 
