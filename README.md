@@ -56,14 +56,21 @@ The home page displays a weekly overview of meals logged. Each day shows a summa
 ```
 CS50x-Final-Project/
 ├── static/                # Contains static files like CSS, JavaScript, and uploads
-├── templates/             # HTML templates for the project
+│   ├── js/
+│   └── uploads/
+|   styles.css
+├── templates/             # HTML templates
+│   ├── index.html         # Homepage
+│   ├── layout.html        # Base layout for other templates
+│   ├── login.html         # Log in page
+│   ├── meal.html          # Meal Log page
+│   └── register.html      # Registration page
 ├── app.py                 # Main application logic
 ├── helpers.py             # Helper functions for application logic
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
 └── tracker.db             # SQLite database
 ```
-
 
 ## Installation
 
