@@ -1,9 +1,8 @@
+>This is my final project for CS50 Introduction to Computer Sciense course.
 # CS50x-Final-Project
 # Meal Tracker
 #### Video Demo:  <URL HERE>
 #### Description:
-
->This is my final project for CS50 Introduction to Computer Sciense course.
 
 A simple web application that allows users to log, edit, and view meals for different days. Users can add meals by selecting the type (e.g., breakfast, lunch, dinner, snack), provide descriptions, upload photos, and view an overview of their meals over multiple weeks.
 
@@ -49,14 +48,75 @@ A simple web application that allows users to log, edit, and view meals for diff
 
 ## Project Structure
 
-```plaintext
-project/
-├── static/             # Static files (CSS, JavaScript, Images)
+CS50x-Final-Project/
+├── static/             # CSS, JavaScript, uploads
 ├── templates/          # HTML templates
-├── app.py              # Main Flask application
-├── config.py           # Configuration settings
-├── requirements.txt    # Project dependencies
-├── database.db         # SQLite database (generated)
-└── README.md           # Project documentation
+├── app.py              # Main application logic
+├── helpers.py          # Other application logic
+├── requirements.txt    # Python dependencies
+├── README.md           # Project documentation
+└── tracker.db          # SQLite database 
+
+## Installation
+
+### Prerequisites
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/jmikusova/CS50x-Final-Project.git
+    ```
+
+2. Navigate into the project folder:
+    ```bash
+    cd CS50x-Final-Project
+    ```
+
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Setting Up the Database
+
+This project uses SQLite as the database to store users and meal data. Follow the steps below to set up the database:
+
+1. Open a terminal and navigate to the project directory:
+
+```bash
+cd path/to/meal-tracker
+```
+
+2. Create the database file:
+
+```bash
+sqlite3 tracker.db
+```
+
+3. Once inside the SQLite shell, create the required tables by executing the following SQL commands:
+
+```sql
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL UNIQUE,
+    password TEXT NOT NULL
+);
+
+CREATE TABLE diary (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL,
+    date DATE NOT NULL,
+    meal_type TEXT NOT NULL,
+    short_descr TEXT NOT NULL,
+    long_descr TEXT,
+    photo_path TEXT,
+    FOREIGN KEY (user_id) REFERENCES users (id)
+);
+```
+
+4. Exit the SQLite shell:
+
+```bash
+.exit
+```
 
 
