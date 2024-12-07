@@ -49,13 +49,14 @@ A simple web application that allows users to log, edit, and view meals for diff
 ## Project Structure
 
 CS50x-Final-Project/
-├──  static/             # CSS, JavaScript, uploads
-├──  templates/          # HTML templates
-├──  app.py              # Main application logic
-├──  helpers.py          # Other application logic
-├──  requirements.txt    # Python dependencies
-├──  README.md           # Project documentation
-└──  tracker.db          # SQLite database 
+├── static/                # Contains static files like CSS, JavaScript, and uploads
+├── templates/             # HTML templates for the project
+├── app.py                 # Main application logic
+├── helpers.py             # Helper functions for application logic
+├── requirements.txt       # Python dependencies
+├── README.md              # Project documentation
+└── tracker.db             # SQLite database
+
 
 ## Installation
 
