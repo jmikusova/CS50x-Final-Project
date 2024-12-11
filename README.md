@@ -1,7 +1,7 @@
 # CS50x-Final-Project
 >This is my final project for CS50 Introduction to Computer Sciense course.
 # Meal Tracker
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/KmDWpoSZXg0
 #### Description:
 
 A simple web application that allows users to log, edit, and view meals for different days. Users can add meals by selecting the type (e.g., breakfast, lunch, dinner, snack), provide descriptions, upload photos, and view an overview of their meals over multiple weeks.
@@ -96,7 +96,7 @@ This project uses SQLite as the database to store users and meal data. Follow th
 1. Open a terminal and navigate to the project directory:
 
 ```bash
-cd path/to/meal-tracker
+cd CS50x-Final-Project
 ```
 
 2. Create the database file:
@@ -139,7 +139,7 @@ flask run
 ```
 
 ## Acknowledgments
->Inspired by various meal tracking applications.
+>Inspired by various meal tracking applications and my own excel meal tracker.
 >Thanks to Flask and Bootstrap for making it easy to build a web app.
 
 
